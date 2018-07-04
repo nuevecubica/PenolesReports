@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  PenolesReports
+
+  Created by Pablo Gomez Basanta on 7/4/18.
+  Copyright © 2018 Pablo Gomez Basanta. All rights reserved.
+*/
+
+"exit" = "Salir";
+"cancel" = "Cancelar";
+"download" = "Descargar";
+"confirm" = "Confirmar";
+"confirm_delete" = "¿Estas seguro que quieres borrar %@?";
+
+"yes" = "Sí";
+"no" = "No";
+"ok" = "OK";
+
+"error" = "Error";
+"error_occurred" = "Ocurrió un error al intentar mostrar el video.";

@@ -1,5 +1,5 @@
 //
-//  UIImageExtensions.swift
+//  Extensions.swift
 //  PenolesReports
 //
 //  Created by Pablo Gomez Basanta on 7/1/18.
@@ -17,7 +17,11 @@ extension UIImage {
       let pngPath = magazine.directory.appendingPathComponent("\(named)@3x.png").path
       self.init(contentsOfFile: pngPath)
     }
+  }
+}
 
-
+extension String {
+  func localized(bundle: Bundle = .main, tableName: String = "Localizable") -> String {
+    return NSLocalizedString(self, tableName: tableName, value: "**\(self)**", comment: "")
   }
 }

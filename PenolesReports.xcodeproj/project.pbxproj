@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		CB590C3120E89EF000F9E2C6 /* DSEsp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB590C3020E89EF000F9E2C6 /* DSEsp.storyboard */; };
 		CB590C3320E89F8400F9E2C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB590C3220E89F8400F9E2C6 /* LaunchScreen.storyboard */; };
-		CB590C3520E8AAAB00F9E2C6 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB590C3420E8AAAB00F9E2C6 /* UIImageExtensions.swift */; };
+		CB590C3520E8AAAB00F9E2C6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB590C3420E8AAAB00F9E2C6 /* Extensions.swift */; };
 		CB590C3720E9751000F9E2C6 /* DSEng.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB590C3620E9750F00F9E2C6 /* DSEng.storyboard */; };
 		CB590C3920E975AD00F9E2C6 /* DSEngMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB590C3820E975AD00F9E2C6 /* DSEngMapViewController.swift */; };
 		CB590C3B20E9769700F9E2C6 /* DSEngMagazine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB590C3A20E9769700F9E2C6 /* DSEngMagazine.swift */; };
@@ -31,6 +31,8 @@
 		CB590C5C20EB093D00F9E2C6 /* AIEngMagazine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB590C5B20EB093D00F9E2C6 /* AIEngMagazine.swift */; };
 		CB590C5E20EB0FE200F9E2C6 /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB590C5D20EB0FE200F9E2C6 /* DownloadManager.swift */; };
 		CB6AADE120ED7D5E0057C999 /* SupportingViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6AADE020ED7D5E0057C999 /* SupportingViewControllers.swift */; };
+		CB6AADE220ED874F0057C999 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB6AADE420ED874F0057C999 /* Main.storyboard */; };
+		CB6AADE820ED88820057C999 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB6AADEA20ED88820057C999 /* Localizable.strings */; };
 		CBABFA9820E87210001BC5AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBABFA9720E87210001BC5AD /* AppDelegate.swift */; };
 		CBABFA9A20E87210001BC5AD /* MagazinePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBABFA9920E87210001BC5AD /* MagazinePickerViewController.swift */; };
 		CBABFA9F20E87211001BC5AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBABFA9E20E87211001BC5AD /* Assets.xcassets */; };
@@ -57,7 +59,6 @@
 		CBABFAD420E89CEC001BC5AD /* gestion_7.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBABFAC520E89CEC001BC5AD /* gestion_7.swift */; };
 		CBABFAD620E89D1F001BC5AD /* DSEspMagazine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBABFAD520E89D1F001BC5AD /* DSEspMagazine.swift */; };
 		CBABFAD820E89DCA001BC5AD /* Magazine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBABFAD720E89DCA001BC5AD /* Magazine.swift */; };
-		CBABFADA20E89E2A001BC5AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBABFAD920E89E2A001BC5AD /* Main.storyboard */; };
 		D02F1469A36310D049B7ED5D /* Pods_PenolesReports.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75A2ED142A91663F234AD0A0 /* Pods_PenolesReports.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,7 +67,7 @@
 		75A2ED142A91663F234AD0A0 /* Pods_PenolesReports.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PenolesReports.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB590C3020E89EF000F9E2C6 /* DSEsp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DSEsp.storyboard; sourceTree = "<group>"; };
 		CB590C3220E89F8400F9E2C6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CB590C3420E8AAAB00F9E2C6 /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
+		CB590C3420E8AAAB00F9E2C6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		CB590C3620E9750F00F9E2C6 /* DSEng.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DSEng.storyboard; sourceTree = "<group>"; };
 		CB590C3820E975AD00F9E2C6 /* DSEngMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSEngMapViewController.swift; sourceTree = "<group>"; };
 		CB590C3A20E9769700F9E2C6 /* DSEngMagazine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSEngMagazine.swift; sourceTree = "<group>"; };
@@ -88,6 +89,10 @@
 		CB590C5B20EB093D00F9E2C6 /* AIEngMagazine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIEngMagazine.swift; sourceTree = "<group>"; };
 		CB590C5D20EB0FE200F9E2C6 /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
 		CB6AADE020ED7D5E0057C999 /* SupportingViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportingViewControllers.swift; sourceTree = "<group>"; };
+		CB6AADE320ED874F0057C999 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB6AADE520ED87820057C999 /* es */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = es; path = es.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB6AADE920ED88820057C999 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CB6AADEB20ED88850057C999 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CBABFA9420E87210001BC5AD /* PenolesReports.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PenolesReports.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBABFA9720E87210001BC5AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBABFA9920E87210001BC5AD /* MagazinePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagazinePickerViewController.swift; sourceTree = "<group>"; };
@@ -116,7 +121,6 @@
 		CBABFAC520E89CEC001BC5AD /* gestion_7.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gestion_7.swift; sourceTree = "<group>"; };
 		CBABFAD520E89D1F001BC5AD /* DSEspMagazine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSEspMagazine.swift; sourceTree = "<group>"; };
 		CBABFAD720E89DCA001BC5AD /* Magazine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magazine.swift; sourceTree = "<group>"; };
-		CBABFAD920E89E2A001BC5AD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		E0EC5A770F5A12A16B6EC1A1 /* Pods-PenolesReports.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PenolesReports.release.xcconfig"; path = "Pods/Target Support Files/Pods-PenolesReports/Pods-PenolesReports.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -202,16 +206,17 @@
 			isa = PBXGroup;
 			children = (
 				CBABFA9720E87210001BC5AD /* AppDelegate.swift */,
-				CB590C3420E8AAAB00F9E2C6 /* UIImageExtensions.swift */,
+				CB590C3420E8AAAB00F9E2C6 /* Extensions.swift */,
 				CBABFA9920E87210001BC5AD /* MagazinePickerViewController.swift */,
 				CB590C5D20EB0FE200F9E2C6 /* DownloadManager.swift */,
-				CBABFAD920E89E2A001BC5AD /* Main.storyboard */,
+				CB6AADE420ED874F0057C999 /* Main.storyboard */,
 				CB590C5F20EC2AA700F9E2C6 /* Magazines */,
 				CBABFAAA20E89C5C001BC5AD /* Common */,
 				CBABFAA920E89C02001BC5AD /* PenolesDS */,
 				CB590C4020EB017900F9E2C6 /* PenolesAI */,
 				CB590C3220E89F8400F9E2C6 /* LaunchScreen.storyboard */,
 				CBABFA9E20E87211001BC5AD /* Assets.xcassets */,
+				CB6AADEA20ED88820057C999 /* Localizable.strings */,
 				CBABFAA320E87211001BC5AD /* Info.plist */,
 			);
 			path = PenolesReports;
@@ -302,6 +307,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = CBABFA8B20E87210001BC5AD;
 			productRefGroup = CBABFA9520E87210001BC5AD /* Products */;
@@ -319,10 +325,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB590C5A20EB068400F9E2C6 /* AIEng.storyboard in Resources */,
-				CBABFADA20E89E2A001BC5AD /* Main.storyboard in Resources */,
+				CB6AADE220ED874F0057C999 /* Main.storyboard in Resources */,
 				CB590C3720E9751000F9E2C6 /* DSEng.storyboard in Resources */,
 				CB590C3320E89F8400F9E2C6 /* LaunchScreen.storyboard in Resources */,
 				CB590C5420EB02FC00F9E2C6 /* AIEsp.storyboard in Resources */,
+				CB6AADE820ED88820057C999 /* Localizable.strings in Resources */,
 				CBABFA9F20E87211001BC5AD /* Assets.xcassets in Resources */,
 				CB590C3120E89EF000F9E2C6 /* DSEsp.storyboard in Resources */,
 			);
@@ -382,7 +389,7 @@
 				CBABFAD420E89CEC001BC5AD /* gestion_7.swift in Sources */,
 				CBABFAB520E89CDA001BC5AD /* CoverViewController.swift in Sources */,
 				CB590C5620EB039C00F9E2C6 /* AIEspMagazine.swift in Sources */,
-				CB590C3520E8AAAB00F9E2C6 /* UIImageExtensions.swift in Sources */,
+				CB590C3520E8AAAB00F9E2C6 /* Extensions.swift in Sources */,
 				CB590C4D20EB019400F9E2C6 /* res_operacion_20.swift in Sources */,
 				CBABFA9820E87210001BC5AD /* AppDelegate.swift in Sources */,
 				CB590C3F20E9778200F9E2C6 /* des_soc_30.swift in Sources */,
@@ -425,11 +432,33 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		CB6AADE420ED874F0057C999 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB6AADE320ED874F0057C999 /* en */,
+				CB6AADE520ED87820057C999 /* es */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CB6AADEA20ED88820057C999 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB6AADE920ED88820057C999 /* en */,
+				CB6AADEB20ED88850057C999 /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		CBABFAA420E87211001BC5AD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -490,6 +519,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

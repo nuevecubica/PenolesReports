@@ -112,10 +112,10 @@ class MagazineCell: UICollectionViewCell {
     
     let progress = DownloadManager.shared.progress[magazine.identifier]
     if progress != nil {
-      downloadCancelButton.setTitle("Cancel", for: .normal)
+      downloadCancelButton.setTitle("cancel".localized(), for: .normal)
       downloading = true
     } else {
-      downloadCancelButton.setTitle("Descargar", for: .normal)
+      downloadCancelButton.setTitle("download".localized(), for: .normal)
       downloading = false
     }
   }
@@ -124,19 +124,19 @@ class MagazineCell: UICollectionViewCell {
     if downloading {
       DownloadManager.shared.cancelDownload(magazine: magazine)
       downloading = false
-      downloadCancelButton.setTitle("Descargar", for: .normal)
+      downloadCancelButton.setTitle("download".localized(), for: .normal)
     } else {
       DownloadManager.shared.startDownload(magazine: magazine)
       updateDownloadProgress(0.0)
-      downloadCancelButton.setTitle("Cancel", for: .normal)
+      downloadCancelButton.setTitle("cancel".localized(), for: .normal)
       downloading = true
     }
   }
   
   @IBAction func deleteTapped(_ sender: UIButton) {
-    let alertController = UIAlertController(title: "Confirmar", message: "¿Estas seguro que quieres borrar \(magazine.name)?", preferredStyle: .alert)
-    alertController.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
-    alertController.addAction(UIAlertAction(title: "Sí", style: .destructive, handler: { (_) in
+    let alertController = UIAlertController(title: "confirm".localized(), message: String(format: "confirm_delete".localized(), magazine.name), preferredStyle: .alert)
+    alertController.addAction(UIAlertAction(title: "no".localized(), style: .cancel, handler: nil))
+    alertController.addAction(UIAlertAction(title: "yes".localized(), style: .destructive, handler: { (_) in
       try? FileManager.default.removeItem(at: self.magazine.directory)
       self.configure(magazine: self.magazine)
     }))

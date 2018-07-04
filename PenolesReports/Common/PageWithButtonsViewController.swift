@@ -32,8 +32,8 @@ class PageWithButtonsViewController: PageViewController {
         
         self.dismiss(animated: true, completion: {
           guard streamURL != nil else {
-            let alertController = UIAlertController(title: "Error", message: "Ocurrió un error al intentar mostrar el video", preferredStyle: .alert)
-            alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            let alertController = UIAlertController(title: "error".localized(), message: "error_occurred".localized(), preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "ok".localized(), style: .default, handler: nil))
             self.present(alertController, animated: true, completion: nil)
             
             return
@@ -56,13 +56,4 @@ class PageWithButtonsViewController: PageViewController {
     
     
   }
-  
-  /*func showVideoPopup(videoName: String) {
-   let player = AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: videoName, ofType:"mp4")!))
-   let playerController = AVPlayerViewController()
-   playerController.player = player
-   present(playerController, animated: true) {
-   player.play()
-   }
-   }*/
 }
