@@ -1,0 +1,18 @@
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "HCU-16-CMn"; */
+"HCU-16-CMn.text" = "Title";
+
+/* Class = "UIButton"; normalTitle = "Exit"; ObjectID = "WMT-dS-Sj5"; */
+"WMT-dS-Sj5.normalTitle" = "Exit";
+
+/* Class = "UIButton"; normalTitle = "Download"; ObjectID = "lRj-R9-BnP"; */
+"lRj-R9-BnP.normalTitle" = "Download";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "nBe-y0-bos"; */
+"nBe-y0-bos.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Delete"; ObjectID = "r0i-ex-DCa"; */
+"r0i-ex-DCa.normalTitle" = "Delete";
+
+/* Class = "UILabel"; text = "Peñoles DS"; ObjectID = "rRT-5g-mIs"; */
+"rRT-5g-mIs.text" = "Peñoles DS";

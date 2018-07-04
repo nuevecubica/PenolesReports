@@ -89,10 +89,11 @@
 		CB590C5B20EB093D00F9E2C6 /* AIEngMagazine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIEngMagazine.swift; sourceTree = "<group>"; };
 		CB590C5D20EB0FE200F9E2C6 /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
 		CB6AADE020ED7D5E0057C999 /* SupportingViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportingViewControllers.swift; sourceTree = "<group>"; };
-		CB6AADE320ED874F0057C999 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CB6AADE520ED87820057C999 /* es */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = es; path = es.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB6AADE920ED88820057C999 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CB6AADEB20ED88850057C999 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CB6AADEC20ED8E770057C999 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB6AADEE20ED8EB60057C999 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		CB6AADF020ED8EBB0057C999 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		CBABFA9420E87210001BC5AD /* PenolesReports.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PenolesReports.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBABFA9720E87210001BC5AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBABFA9920E87210001BC5AD /* MagazinePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagazinePickerViewController.swift; sourceTree = "<group>"; };
@@ -436,8 +437,9 @@
 		CB6AADE420ED874F0057C999 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CB6AADE320ED874F0057C999 /* en */,
-				CB6AADE520ED87820057C999 /* es */,
+				CB6AADEC20ED8E770057C999 /* Base */,
+				CB6AADEE20ED8EB60057C999 /* en */,
+				CB6AADF020ED8EBB0057C999 /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
