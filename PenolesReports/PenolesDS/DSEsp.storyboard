@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Esp Map View Controller-->
+        <scene sceneID="AhM-wR-Q3g">
+            <objects>
+                <viewController storyboardIdentifier="mapViewController" id="Qi5-UG-saU" customClass="DSEspMapViewController" customModule="PenolesReports" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="btI-yC-deX">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ipP-6d-KWR" userLabel="mapasolo">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Q8Q-qv-1B9">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="topRight" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EtE-Wo-GOc" userLabel="mapaScrollView">
+                                <rect key="frame" x="0.0" y="333" width="282" height="385"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="atA-Jt-Tq5" userLabel="scrollImage">
+                                        <rect key="frame" x="0.0" y="0.0" width="282" height="16"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="282" id="fp2-5f-5Zv"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="atA-Jt-Tq5" secondAttribute="bottom" id="DCI-8R-eJf"/>
+                                    <constraint firstItem="atA-Jt-Tq5" firstAttribute="leading" secondItem="EtE-Wo-GOc" secondAttribute="leading" id="Fe5-rt-3hO"/>
+                                    <constraint firstItem="atA-Jt-Tq5" firstAttribute="top" secondItem="EtE-Wo-GOc" secondAttribute="top" id="HDN-YD-Ipv"/>
+                                    <constraint firstAttribute="trailing" secondItem="atA-Jt-Tq5" secondAttribute="trailing" id="S0d-Rc-t1u"/>
+                                    <constraint firstAttribute="width" constant="282" id="gfh-fW-MeI"/>
+                                </constraints>
+                            </scrollView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="u7H-Dv-DDE" userLabel="States Stack View">
+                                <rect key="frame" x="864" y="83" width="150" height="348"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfb-1E-0gu">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="28"/>
+                                        <color key="backgroundColor" red="0.015686274510000001" green="0.37254901959999998" blue="0.58431372550000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                        <state key="normal" title="Todos los Estados">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="all_estados:" destination="Qi5-UG-saU" eventType="touchUpInside" id="3wL-1b-so5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oWG-zC-gVQ">
+                                        <rect key="frame" x="0.0" y="32" width="150" height="28"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10423801370000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="5" maxX="5" maxY="5"/>
+                                        <state key="normal" title="Sonora">
+                                            <color key="titleColor" red="0.33725490200000002" green="0.46666666670000001" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn_sonora:" destination="Qi5-UG-saU" eventType="touchUpInside" id="wKC-Zd-sED"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Bf-py-sXC">
+                                        <rect key="frame" x="0.0" y="64" width="150" height="28"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10423801370000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="5" maxX="5" maxY="5"/>
+                                        <state key="normal" title="Coahuila">
+                                            <color key="titleColor" red="0.33725490200000002" green="0.46666666670000001" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn_coahuila:" destination="Qi5-UG-saU" eventType="touchUpInside" id="cnn-zr-2EG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2qk-xh-xnX">
+                                        <rect key="frame" x="0.0" y="96" width="150" height="28"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10423801370000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="5" maxX="5" maxY="5"/>
+                                        <state key="normal" title="Zacatecas">
+                                            <color key="titleColor" red="0.33725490200000002" green="0.46666666670000001" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn_zacatecas:" destination="Qi5-UG-saU" eventType="touchUpInside" id="6Xy-aS-HLA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ez5-4B-jA9">
+                                        <rect key="frame" x="0.0" y="128" width="150" height="28"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10423801370000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="5" maxX="5" maxY="5"/>
+                                        <state key="normal" title="Durango">
+                                            <color key="titleColor" red="0.33725490200000002" green="0.46666666670000001" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn_durango:" destination="Qi5-UG-saU" eventType="touchUpInside" id="wuD-AR-Yco"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xL8-2q-ikv">
+                                        <rect key="frame" x="0.0" y="160" width="150" height="28"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10423801370000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="5" maxX="5" maxY="5"/>
+                                        <state key="normal" title="Ciudad de México">
+                                            <color key="titleColor" red="0.33725490200000002" green="0.46666666670000001" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn_cdmx:" destination="Qi5-UG-saU" eventType="touchUpInside" id="gqG-91-bZ6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygv-qf-GWh">
+                                        <rect key="frame" x="0.0" y="192" width="150" height="28"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10423801370000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="5" maxX="5" maxY="5"/>
+                                        <state key="normal" title="Chihuahua">
+                                            <color key="titleColor" red="0.33725490200000002" green="0.46666666670000001" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn_chihuahua:" destination="Qi5-UG-saU" eventType="touchUpInside" id="Mu4-Kf-wuN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WAM-kq-lBD">
+                                        <rect key="frame" x="0.0" y="224" width="150" height="28"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10423801370000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="5" maxX="5" maxY="5"/>
+                                        <state key="normal" title="Estado de México">
+                                            <color key="titleColor" red="0.33725490200000002" green="0.46666666670000001" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn_edomex:" destination="Qi5-UG-saU" eventType="touchUpInside" id="upZ-mG-gVc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hh-Yp-VVf">
+                                        <rect key="frame" x="0.0" y="256" width="150" height="28"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10423801370000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="5" maxX="5" maxY="5"/>
+                                        <state key="normal" title="Guerrero">
+                                            <color key="titleColor" red="0.33725490200000002" green="0.46666666670000001" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn_guerrero:" destination="Qi5-UG-saU" eventType="touchUpInside" id="JQ0-ra-Twg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Sq-EZ-Ore">
+                                        <rect key="frame" x="0.0" y="288" width="150" height="28"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10423801370000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="5" maxX="5" maxY="5"/>
+                                        <state key="normal" title="Oaxaca">
+                                            <color key="titleColor" red="0.33725490200000002" green="0.46666666670000001" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn_oaxaca:" destination="Qi5-UG-saU" eventType="touchUpInside" id="pXr-Ob-iHd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HNu-Ur-6Mo">
+                                        <rect key="frame" x="0.0" y="320" width="150" height="28"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10423801370000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="5" maxX="5" maxY="5"/>
+                                        <state key="normal" title="Tamaulipas">
+                                            <color key="titleColor" red="0.33725490200000002" green="0.46666666670000001" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn_tamaulipas:" destination="Qi5-UG-saU" eventType="touchUpInside" id="B4n-au-s79"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="i1s-sO-alH"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="JmT-DK-TO9" userLabel="Units Stack View">
+                                <rect key="frame" x="684" y="83" width="160" height="316"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bSn-q9-3t2">
+                                        <rect key="frame" x="0.0" y="0.0" width="160" height="28"/>
+                                        <color key="backgroundColor" red="0.015686274510000001" green="0.37254901959999998" blue="0.58431372550000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                        <state key="normal" title="Todas las unidades">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="all_unidades:" destination="Qi5-UG-saU" eventType="touchUpInside" id="zi1-gm-Nbh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nri-78-c8k">
+                                        <rect key="frame" x="0.0" y="32" width="160" height="28"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10423801370000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="5" maxX="5" maxY="5"/>
+                                        <state key="normal" title="Exploración">
+                                            <color key="titleColor" red="0.33725490200000002" green="0.46666666670000001" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn_exploration:" destination="Qi5-UG-saU" eventType="touchUpInside" id="K21-Lx-QVS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yI3-ut-Je6">
+                                        <rect key="frame" x="0.0" y="64" width="160" height="28"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10423801370000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="5" maxX="5" maxY="5"/>
+                                        <state key="normal" title="Minas">
+                                            <color key="titleColor" red="0.1647058824" green="0.70588235290000001" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn_minas:" destination="Qi5-UG-saU" eventType="touchUpInside" id="mvM-v5-6YN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mrF-zL-Mmw">
+                                        <rect key="frame" x="0.0" y="96" width="160" height="28"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10423801370000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="5" maxX="5" maxY="5"/>
+                                        <state key="normal" title="Metales">
+                                            <color key="titleColor" red="0.97647058819999999" green="0.69803921570000005" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn_metales:" destination="Qi5-UG-saU" eventType="touchUpInside" id="RfM-P3-OYD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ded-3v-EIF">
+                                        <rect key="frame" x="0.0" y="128" width="160" height="28"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10423801370000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="5" maxX="5" maxY="5"/>
+                                        <state key="normal" title="Químicos">
+                                            <color key="titleColor" red="0.27058823529999998" green="0.67450980390000004" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn_quimicos:" destination="Qi5-UG-saU" eventType="touchUpInside" id="JBE-3h-5jH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kxm-xW-gTH">
+                                        <rect key="frame" x="0.0" y="160" width="160" height="28"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10423801370000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="5" maxX="5" maxY="5"/>
+                                        <state key="normal" title="Minas rentadas">
+                                            <color key="titleColor" red="0.52941176469999995" green="0.46274509800000002" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn_minas_rentadas:" destination="Qi5-UG-saU" eventType="touchUpInside" id="jPb-fl-F0e"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JN5-1x-Fvq">
+                                        <rect key="frame" x="0.0" y="192" width="160" height="28"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10423801370000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="5" maxX="5" maxY="5"/>
+                                        <state key="normal" title="Minas cerradas">
+                                            <color key="titleColor" red="0.91372549020000005" green="0.30588235289999999" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn_minas_cerradas:" destination="Qi5-UG-saU" eventType="touchUpInside" id="Xqx-3a-7mg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rT8-IX-eeb">
+                                        <rect key="frame" x="0.0" y="224" width="160" height="28"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10423801370000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="5" maxX="5" maxY="5"/>
+                                        <state key="normal" title="Minas restauradas">
+                                            <color key="titleColor" red="0.90588235289999997" green="0.1137254902" blue="0.44705882349999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn_minas_restauradas:" destination="Qi5-UG-saU" eventType="touchUpInside" id="DTC-Lh-1jy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="udx-Xl-DJW">
+                                        <rect key="frame" x="0.0" y="256" width="160" height="28"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10423801370000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="5" maxX="5" maxY="5"/>
+                                        <state key="normal" title="Oficinas comerciales">
+                                            <color key="titleColor" red="0.1450980392" green="0.2156862745" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn_oficinas_comerciales:" destination="Qi5-UG-saU" eventType="touchUpInside" id="LbK-Rw-J2L"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAm-gF-Eqr">
+                                        <rect key="frame" x="0.0" y="288" width="160" height="28"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10423801370000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="5" maxX="5" maxY="5"/>
+                                        <state key="normal" title="Subsidiarias">
+                                            <color key="titleColor" red="0.40000000000000002" green="0.13725490200000001" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn_subsidiarias:" destination="Qi5-UG-saU" eventType="touchUpInside" id="daO-Fh-oeS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="C24-ap-h7Q"/>
+                                </constraints>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="down_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="jMV-WO-LWM">
+                                <rect key="frame" x="290" y="692" width="26" height="26"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xSQ-z4-fFB" firstAttribute="trailing" secondItem="u7H-Dv-DDE" secondAttribute="trailing" constant="10" id="8c1-vn-47j"/>
+                            <constraint firstItem="jMV-WO-LWM" firstAttribute="leading" secondItem="EtE-Wo-GOc" secondAttribute="trailing" constant="8" id="BhT-bX-IYE"/>
+                            <constraint firstItem="Q8Q-qv-1B9" firstAttribute="top" secondItem="btI-yC-deX" secondAttribute="top" id="DgF-73-VCl"/>
+                            <constraint firstAttribute="trailing" secondItem="Q8Q-qv-1B9" secondAttribute="trailing" id="DlN-1f-Wwq"/>
+                            <constraint firstItem="JmT-DK-TO9" firstAttribute="top" secondItem="xSQ-z4-fFB" secondAttribute="top" constant="63" id="MtI-k1-AHw"/>
+                            <constraint firstItem="xSQ-z4-fFB" firstAttribute="bottom" secondItem="jMV-WO-LWM" secondAttribute="bottom" constant="50" id="PmK-mi-wao"/>
+                            <constraint firstItem="u7H-Dv-DDE" firstAttribute="top" secondItem="xSQ-z4-fFB" secondAttribute="top" constant="63" id="S9z-4E-LoF"/>
+                            <constraint firstItem="u7H-Dv-DDE" firstAttribute="leading" secondItem="JmT-DK-TO9" secondAttribute="trailing" constant="20" id="U8I-8J-ugT"/>
+                            <constraint firstItem="Q8Q-qv-1B9" firstAttribute="leading" secondItem="btI-yC-deX" secondAttribute="leading" id="Uj6-KU-s5P"/>
+                            <constraint firstItem="EtE-Wo-GOc" firstAttribute="leading" secondItem="xSQ-z4-fFB" secondAttribute="leading" id="eze-is-e2l"/>
+                            <constraint firstItem="ipP-6d-KWR" firstAttribute="trailing" secondItem="xSQ-z4-fFB" secondAttribute="trailing" id="gBX-ty-IUn"/>
+                            <constraint firstItem="EtE-Wo-GOc" firstAttribute="top" secondItem="xSQ-z4-fFB" secondAttribute="bottom" constant="-435" id="ghl-L4-S17"/>
+                            <constraint firstItem="EtE-Wo-GOc" firstAttribute="bottom" secondItem="xSQ-z4-fFB" secondAttribute="bottom" constant="-50" id="h3k-EB-PfZ"/>
+                            <constraint firstItem="ipP-6d-KWR" firstAttribute="top" secondItem="btI-yC-deX" secondAttribute="top" id="q3e-jq-U5z"/>
+                            <constraint firstItem="ipP-6d-KWR" firstAttribute="bottom" secondItem="xSQ-z4-fFB" secondAttribute="bottom" id="vAm-d7-X0k"/>
+                            <constraint firstAttribute="bottom" secondItem="Q8Q-qv-1B9" secondAttribute="bottom" id="vDc-m3-NyB"/>
+                            <constraint firstItem="ipP-6d-KWR" firstAttribute="leading" secondItem="xSQ-z4-fFB" secondAttribute="leading" id="xi1-sQ-pWd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xSQ-z4-fFB"/>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImage" destination="Q8Q-qv-1B9" id="Pbb-O8-ISb"/>
+                        <outlet property="btn_chihuahua" destination="ygv-qf-GWh" id="Wed-nf-Baw"/>
+                        <outlet property="btn_ciudad_mexico" destination="xL8-2q-ikv" id="zoU-RN-vNy"/>
+                        <outlet property="btn_coahuila" destination="3Bf-py-sXC" id="iRI-N8-Usx"/>
+                        <outlet property="btn_durango" destination="ez5-4B-jA9" id="ms9-i0-IHF"/>
+                        <outlet property="btn_estado_mexico" destination="WAM-kq-lBD" id="Sw4-0D-nwA"/>
+                        <outlet property="btn_exploration" destination="Nri-78-c8k" id="Jfa-Cm-mZt"/>
+                        <outlet property="btn_guerrero" destination="8hh-Yp-VVf" id="zLc-1J-3yz"/>
+                        <outlet property="btn_metales" destination="mrF-zL-Mmw" id="2Ez-Bg-g4g"/>
+                        <outlet property="btn_minas" destination="yI3-ut-Je6" id="PN4-n4-HZY"/>
+                        <outlet property="btn_minas_cerradas" destination="JN5-1x-Fvq" id="JJy-q5-EnA"/>
+                        <outlet property="btn_minas_rentadas" destination="Kxm-xW-gTH" id="Zak-1A-367"/>
+                        <outlet property="btn_minas_restauradas" destination="rT8-IX-eeb" id="QWi-cA-3Eg"/>
+                        <outlet property="btn_oaxaca" destination="3Sq-EZ-Ore" id="tXp-Ch-tE2"/>
+                        <outlet property="btn_oficinas_comerciales" destination="udx-Xl-DJW" id="jh2-Sv-9jM"/>
+                        <outlet property="btn_quimicos" destination="ded-3v-EIF" id="WCC-V0-mRy"/>
+                        <outlet property="btn_sonora" destination="oWG-zC-gVQ" id="XSm-L3-01V"/>
+                        <outlet property="btn_subsidiarias" destination="KAm-gF-Eqr" id="xaV-gR-OZD"/>
+                        <outlet property="btn_tamaulipas" destination="HNu-Ur-6Mo" id="XhQ-KX-PU2"/>
+                        <outlet property="btn_zacatecas" destination="2qk-xh-xnX" id="Do4-PA-FQj"/>
+                        <outlet property="downIcon" destination="jMV-WO-LWM" id="k33-Vk-c5f"/>
+                        <outlet property="emptyMapImageView" destination="ipP-6d-KWR" id="w7J-WF-cSZ"/>
+                        <outlet property="mapaScrollView" destination="EtE-Wo-GOc" id="X6B-ep-Nxn"/>
+                        <outlet property="scrollerImage" destination="atA-Jt-Tq5" id="NHz-Sl-fK4"/>
+                        <outlet property="scrollerView" destination="EtE-Wo-GOc" id="Qvs-PS-R2W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qMy-dV-0ZJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="150" y="118.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="down_arrow" width="26" height="26"/>
+    </resources>
+</document>

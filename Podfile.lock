@@ -1,0 +1,20 @@
+PODS:
+  - YTVimeoExtractor (1.2.0)
+  - Zip (1.1.0)
+
+DEPENDENCIES:
+  - YTVimeoExtractor
+  - Zip
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - YTVimeoExtractor
+    - Zip
+
+SPEC CHECKSUMS:
+  YTVimeoExtractor: f4ed90f43e08d33d56c1d1aff3f4f64663747966
+  Zip: 8877eede3dda76bcac281225c20e71c25270774c
+
+PODFILE CHECKSUM: 9e3d7c6fdc984eba3befe66e9259c7d2ab0252fb
+
+COCOAPODS: 1.5.3
