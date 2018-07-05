@@ -15,7 +15,7 @@ class AIEspMagazine: Magazine {
   
   var name: String = "Peñoles AI Español"
   var identifier: String = "AIEspMagazine"
-  var downloadURL: URL = URL(string: "https://shiftingmind.s3.amazonaws.com/penoles-ai-esp.zip")!
+    var downloadURL: URL = URL(string: "https://s3-us-west-1.amazonaws.com/nuevecubica-e3/penoles-ai-esp.zip")!
   
   var initialViewController: UIViewController {
     let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "pageNavigationController") as! PageNavigationViewController
@@ -29,7 +29,7 @@ class AIEspMagazine: Magazine {
   
   var sections:[Section] = [
     Section(name: "Portada", pages: [
-      // ImagePage(imageName: "portada"),
+       //ImagePage(imageName: "portada"),
       CoverPage(theBg: "cover_bg", theFront: "cover_title", theTitle: "cover_front"),
       ]),
     Section(name: "Perfil corporativo", pages: [

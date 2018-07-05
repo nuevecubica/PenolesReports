@@ -97,10 +97,12 @@ class MagazineCell: UICollectionViewCell {
     didSet { progressContainer.isHidden = !downloading }
   }
   
+    
   func configure(magazine: Magazine) {
     self.magazine = magazine
     
     titleLabel.text = magazine.name
+    
     
     if FileManager.default.fileExists(atPath: magazine.directory.path, isDirectory: nil) {
       downloadCancelButton.isHidden = true
