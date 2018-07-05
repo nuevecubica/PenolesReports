@@ -11,11 +11,14 @@ import UIKit
 
 class des_eco_10Page: ImagePage {
   override func viewController(with magazine: Magazine) -> UIViewController {
-    return des_eco_10ViewController(image: UIImage(named: imageName, inMagazine: magazine)!)
+    let vc = des_eco_10ViewController(image: UIImage(named: imageName, inMagazine: magazine)!)
+    vc.magazine = magazine
+    return vc
   }
 }
 
 class des_eco_10ViewController: PageWithButtonsViewController {
+  var magazine: Magazine!
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -65,11 +68,11 @@ class des_eco_10ViewController: PageWithButtonsViewController {
   //*****************************************
   
   @IBAction func button_vvq_Pressed(_ sender: UIButton) {
-    showImagePopup(image:#imageLiteral(resourceName: "volumen_ventas_quimicos"))
+    showImagePopup(image:UIImage(named: "volumen_ventas_quimicos", inMagazine: magazine)!)
     //showVideoPopup(videoName: "video")
   }
   @IBAction func button_vvm_Pressed(_ sender: UIButton) {
-    showImagePopup(image:#imageLiteral(resourceName: "volumen_ventas_metales"))
+    showImagePopup(image:UIImage(named: "volumen_ventas_metales", inMagazine: magazine)!)
     //showVideoPopup(videoName: "video")
   }
 }

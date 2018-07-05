@@ -10,12 +10,15 @@ import UIKit
 
 class res_operacion_19Page: ImagePage {
   override func viewController(with magazine: Magazine) -> UIViewController {
-    return res_operacion_19ViewController(image: UIImage(named: imageName, inMagazine: magazine)!)
+    let vc = res_operacion_19ViewController(image: UIImage(named: imageName, inMagazine: magazine)!)
+    vc.magazine = magazine
+    return vc
   }
 }
 
 
 class res_operacion_19ViewController: PageWithButtonsViewController {
+  var magazine: Magazine!
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -96,19 +99,19 @@ class res_operacion_19ViewController: PageWithButtonsViewController {
   //*****************************************
   
   @IBAction func button_oro_Pressed(_ sender: UIButton) {
-    showImagePopup(image:#imageLiteral(resourceName: "res_ope_pag19_SulfatoSodio"))
+    showImagePopup(image:UIImage(named: "res_ope_pag19_SulfatoSodio", inMagazine: magazine)!)
     //showVideoPopup(videoName: "video")
   }
   @IBAction func button_plata_Pressed(_ sender: UIButton) {
-    showImagePopup(image:#imageLiteral(resourceName: "res_ope_pag20_OxicoMagnesio"))
+    showImagePopup(image:UIImage(named: "res_ope_pag20_OxicoMagnesio", inMagazine: magazine)!)
     //showVideoPopup(videoName: "video")
   }
   @IBAction func button_plomo_Pressed(_ sender: UIButton) {
-    showImagePopup(image:#imageLiteral(resourceName: "res_ope_pag21_SulfatoMagnesio"))
+    showImagePopup(image:UIImage(named: "res_ope_pag21_SulfatoMagnesio", inMagazine: magazine)!)
     //showVideoPopup(videoName: "video")
   }
   @IBAction func button_zinc_Pressed(_ sender: UIButton) {
-    showImagePopup(image:#imageLiteral(resourceName: "res_ope_pag22_SulfatoAmonio"))
+    showImagePopup(image:UIImage(named: "res_ope_pag22_SulfatoAmonio", inMagazine: magazine)!)
     //showVideoPopup(videoName: "video")
   }
   

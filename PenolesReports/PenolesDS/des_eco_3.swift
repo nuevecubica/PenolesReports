@@ -10,14 +10,18 @@ import UIKit
 
 class des_eco_3Page: ImagePage {
   override func viewController(with magazine: Magazine) -> UIViewController {
-    return des_eco_3ViewController(image: UIImage(named: imageName, inMagazine: magazine)!)
+    let vc = des_eco_3ViewController(image: UIImage(named: imageName, inMagazine: magazine)!)
+    vc.magazine = magazine
+    return vc
   }
 }
 
 class des_eco_3ViewController: PageWithButtonsViewController {
+  var magazine: Magazine!
+
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+
     imageView.isUserInteractionEnabled = true
     
     let imageScale = view.bounds.width / imageView.image!.size.width
@@ -121,20 +125,16 @@ class des_eco_3ViewController: PageWithButtonsViewController {
   // PRESS FUNCTIONS
   //*****************************************
   @IBAction func btn_vg_Pressed(_ sender: UIButton) {
-    showImagePopup(image: #imageLiteral(resourceName: "valor_genarado") )
-    //showVideoPopup(videoName: "video")
+    showImagePopup(image: UIImage(named: "valor_genarado", inMagazine: magazine)!)
   }
   @IBAction func btn_vd_Pressed(_ sender: UIButton) {
-    showImagePopup(image:#imageLiteral(resourceName: "valoe_distributivo"))
-    //showVideoPopup(videoName: "video")
+    showImagePopup(image:UIImage(named: "valoe_distributivo", inMagazine: magazine)!)
   }
   @IBAction func btn_ac_Pressed(_ sender: UIButton) {
-    showImagePopup(image:#imageLiteral(resourceName: "aportaciones"))
-    //showVideoPopup(videoName: "video")
+    showImagePopup(image:UIImage(named: "aportaciones", inMagazine: magazine)!)
   }
   @IBAction func btn_de_Pressed(_ sender: UIButton) {
-    showImagePopup(image:#imageLiteral(resourceName: "derrama_economica"))
-    //showVideoPopup(videoName: "video")
+    showImagePopup(image:UIImage(named: "derrama_economica", inMagazine: magazine)!)
   }
   @IBAction func btn_vid_Pressed(_ sender: UIButton) {
     showVideoPopup(vimeoId: "278336617")

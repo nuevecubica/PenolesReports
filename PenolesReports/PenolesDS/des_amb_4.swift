@@ -11,11 +11,14 @@ import UIKit
 
 class des_amb_4Page: ImagePage {
   override func viewController(with magazine: Magazine) -> UIViewController {
-    return des_amb_4ViewController(image: UIImage(named: imageName, inMagazine: magazine)!)
+    let vc = des_amb_4ViewController(image: UIImage(named: imageName, inMagazine: magazine)!)
+    vc.magazine = magazine
+    return vc
   }
 }
 
 class des_amb_4ViewController: PageWithButtonsViewController {
+  var magazine: Magazine!
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -48,7 +51,7 @@ class des_amb_4ViewController: PageWithButtonsViewController {
   // PRESS FUNCTIONS
   //*****************************************
   @IBAction func btn_ia_Pressed(_ sender: UIButton) {
-    showImagePopup(image: #imageLiteral(resourceName: "indicie_consumo_agua") )
+    showImagePopup(image:UIImage(named: "indicie_consumo_agua", inMagazine: magazine)!)
     //showVideoPopup(videoName: "video")
   }
   

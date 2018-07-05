@@ -10,11 +10,14 @@ import UIKit
 
 class res_operacion_6Page: ImagePage {
   override func viewController(with magazine: Magazine) -> UIViewController {
-    return res_operacion_6ViewController(image: UIImage(named: imageName, inMagazine: magazine)!)
+    let vc = res_operacion_6ViewController(image: UIImage(named: imageName, inMagazine: magazine)!)
+    vc.magazine = magazine
+    return vc
   }
 }
 
 class res_operacion_6ViewController: PageWithButtonsViewController {
+  var magazine: Magazine!
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -124,27 +127,27 @@ class res_operacion_6ViewController: PageWithButtonsViewController {
   //*****************************************
   
   @IBAction func button_oro_Pressed(_ sender: UIButton) {
-    showImagePopup(image:#imageLiteral(resourceName: "res_ope_pag1_Oro"))
+    showImagePopup(image:UIImage(named: "res_ope_pag1_Oro", inMagazine: magazine)!)
     //showVideoPopup(videoName: "video")
   }
   @IBAction func button_plata_Pressed(_ sender: UIButton) {
-    showImagePopup(image:#imageLiteral(resourceName: "res_ope_pag2_Plata"))
+    showImagePopup(image:UIImage(named: "res_ope_pag2_Plata", inMagazine: magazine)!)
     //showVideoPopup(videoName: "video")
   }
   @IBAction func button_plomo_Pressed(_ sender: UIButton) {
-    showImagePopup(image:#imageLiteral(resourceName: "res_ope_pag3_Plomo"))
+    showImagePopup(image:UIImage(named: "res_ope_pag3_Plomo", inMagazine: magazine)!)
     //showVideoPopup(videoName: "video")
   }
   @IBAction func button_zinc_Pressed(_ sender: UIButton) {
-    showImagePopup(image:#imageLiteral(resourceName: "res_ope_pag5_Zinc"))
+    showImagePopup(image:UIImage(named: "res_ope_pag5_Zinc", inMagazine: magazine)!)
     //showVideoPopup(videoName: "video")
   }
   @IBAction func button_cobre_Pressed(_ sender: UIButton) {
-    showImagePopup(image:#imageLiteral(resourceName: "res_ope_pag5_Cobre"))
+    showImagePopup(image:UIImage(named: "res_ope_pag5_Cobre", inMagazine: magazine)!)
     //showVideoPopup(videoName: "video")
   }
   @IBAction func button_cobrecat_Pressed(_ sender: UIButton) {
-    showImagePopup(image:#imageLiteral(resourceName: "res_ope_pag6_CobreCatodico"))
+    showImagePopup(image:UIImage(named: "res_ope_pag6_CobreCatodico", inMagazine: magazine)!)
     //showVideoPopup(videoName: "video")
   }
   

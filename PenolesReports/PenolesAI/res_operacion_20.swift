@@ -10,12 +10,15 @@ import UIKit
 
 class res_operacion_20Page: ImagePage {
   override func viewController(with magazine: Magazine) -> UIViewController {
-    return res_operacion_20ViewController(image: UIImage(named: imageName, inMagazine: magazine)!)
+    let vc = res_operacion_20ViewController(image: UIImage(named: imageName, inMagazine: magazine)!)
+    vc.magazine = magazine
+    return vc
   }
 }
 
 
 class res_operacion_20ViewController: PageWithButtonsViewController {
+  var magazine: Magazine!
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -51,7 +54,7 @@ class res_operacion_20ViewController: PageWithButtonsViewController {
   //*****************************************
   
   @IBAction func button_cfs_Pressed(_ sender: UIButton) {
-    showImagePopup(image:#imageLiteral(resourceName: "res_ope_pag23_CifrasFinancierasSobresalientes"))
+    showImagePopup(image:UIImage(named: "res_ope_pag23_CifrasFinancierasSobresalientes", inMagazine: magazine)!)
     //showVideoPopup(videoName: "video")
   }
   

@@ -11,11 +11,14 @@ import UIKit
 
 class modelo_negocio_3Page: ImagePage {
   override func viewController(with magazine: Magazine) -> UIViewController {
-    return modelo_negocio_3ViewController(image: UIImage(named: imageName, inMagazine: magazine)!)
+    let vc = modelo_negocio_3ViewController(image: UIImage(named: imageName, inMagazine: magazine)!)
+    vc.magazine = magazine
+    return vc
   }
 }
 
 class modelo_negocio_3ViewController: PageWithButtonsViewController {
+  var magazine: Magazine!
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -80,15 +83,15 @@ class modelo_negocio_3ViewController: PageWithButtonsViewController {
   //*****************************************
   
   @IBAction func button_cfs_Pressed(_ sender: UIButton) {
-    showImagePopup(image:#imageLiteral(resourceName: "mn_CifrasFinancierasSobresalientes"))
+    showImagePopup(image:UIImage(named: "mn_CifrasFinancierasSobresalientes", inMagazine: magazine)!)
     //showVideoPopup(videoName: "video")
   }
   @IBAction func button_vp_Pressed(_ sender: UIButton) {
-    showImagePopup(image:#imageLiteral(resourceName: "mn_VentasporProducto"))
+    showImagePopup(image:UIImage(named: "mn_VentasporProducto", inMagazine: magazine)!)
     //showVideoPopup(videoName: "video")
   }
   @IBAction func button_ec_Pressed(_ sender: UIButton) {
-    showImagePopup(image:#imageLiteral(resourceName: "mn_EstructuradelCosto"))
+    showImagePopup(image:UIImage(named: "mn_EstructuradelCosto", inMagazine: magazine)!)
     //showVideoPopup(videoName: "video")
   }
 }

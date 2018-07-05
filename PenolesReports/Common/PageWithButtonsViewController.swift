@@ -13,7 +13,8 @@ import YTVimeoExtractor
 class PageWithButtonsViewController: PageViewController {
   func showImagePopup(image: UIImage) {
     let popupVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "imagePopup") as! ImagePopupViewController
-    popupVC.image = image
+    // Force the image to 1x
+    popupVC.image = UIImage(cgImage: image.cgImage!, scale: 1.0, orientation: image.imageOrientation)
     
     present(popupVC, animated: true, completion: nil)
   }

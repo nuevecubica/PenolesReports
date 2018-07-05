@@ -10,13 +10,16 @@ import UIKit
 
 class res_operacion_14Page: ImagePage {
   override func viewController(with magazine: Magazine) -> UIViewController {
-    return res_operacion_14ViewController(image: UIImage(named: imageName, inMagazine: magazine)!)
+    let vc = res_operacion_14ViewController(image: UIImage(named: imageName, inMagazine: magazine)!)
+    vc.magazine = magazine
+    return vc
   }
 }
 
 
 
 class res_operacion_14ViewController: PageWithButtonsViewController {
+  var magazine: Magazine!
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -126,27 +129,27 @@ class res_operacion_14ViewController: PageWithButtonsViewController {
   //*****************************************
   
   @IBAction func button_oro_Pressed(_ sender: UIButton) {
-    showImagePopup(image:#imageLiteral(resourceName: "res_ope_pag12_oro"))
+    showImagePopup(image:UIImage(named: "res_ope_pag12_oro", inMagazine: magazine)!)
     //showVideoPopup(videoName: "video")
   }
   @IBAction func button_plata_Pressed(_ sender: UIButton) {
-    showImagePopup(image:#imageLiteral(resourceName: "res_ope_pag13_Plata"))
+    showImagePopup(image:UIImage(named: "res_ope_pag13_Plata", inMagazine: magazine)!)
     //showVideoPopup(videoName: "video")
   }
   @IBAction func button_plomo_Pressed(_ sender: UIButton) {
-    showImagePopup(image:#imageLiteral(resourceName: "res_ope_pag14_Plomo"))
+    showImagePopup(image:UIImage(named: "res_ope_pag14_Plomo", inMagazine: magazine)!)
     //showVideoPopup(videoName: "video")
   }
   @IBAction func button_zinc_Pressed(_ sender: UIButton) {
-    showImagePopup(image:#imageLiteral(resourceName: "res_ope_pag15_Zinc"))
+    showImagePopup(image:UIImage(named: "res_ope_pag15_Zinc", inMagazine: magazine)!)
     //showVideoPopup(videoName: "video")
   }
   @IBAction func button_bismuto_Pressed(_ sender: UIButton) {
-    showImagePopup(image:#imageLiteral(resourceName: "res_ope_pag16_Bismuto"))
+    showImagePopup(image:UIImage(named: "res_ope_pag16_Bismuto", inMagazine: magazine)!)
     //showVideoPopup(videoName: "video")
   }
   @IBAction func button_bullion_Pressed(_ sender: UIButton) {
-    showImagePopup(image:#imageLiteral(resourceName: "res_ope_pag17_Bullion"))
+    showImagePopup(image:UIImage(named: "res_ope_pag17_Bullion", inMagazine: magazine)!)
     //showVideoPopup(videoName: "video")
   }
   

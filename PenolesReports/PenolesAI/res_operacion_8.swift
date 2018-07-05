@@ -10,11 +10,14 @@ import UIKit
 
 class res_operacion_8Page: ImagePage {
   override func viewController(with magazine: Magazine) -> UIViewController {
-    return res_operacion_8ViewController(image: UIImage(named: imageName, inMagazine: magazine)!)
+    let vc = res_operacion_8ViewController(image: UIImage(named: imageName, inMagazine: magazine)!)
+    vc.magazine = magazine
+    return vc
   }
 }
 
 class res_operacion_8ViewController: PageWithButtonsViewController {
+  var magazine: Magazine!
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -110,23 +113,23 @@ class res_operacion_8ViewController: PageWithButtonsViewController {
   //*****************************************
   
   @IBAction func button_oro_Pressed(_ sender: UIButton) {
-    showImagePopup(image:#imageLiteral(resourceName: "res_ope_pag8_Oro"))
+    showImagePopup(image:UIImage(named: "res_ope_pag8_Oro", inMagazine: magazine)!)
     //showVideoPopup(videoName: "video")
   }
   @IBAction func button_plata_Pressed(_ sender: UIButton) {
-    showImagePopup(image:#imageLiteral(resourceName: "res_ope_pag9_Plata"))
+    showImagePopup(image:UIImage(named: "res_ope_pag9_Plata", inMagazine: magazine)!)
     //showVideoPopup(videoName: "video")
   }
   @IBAction func button_plomo_Pressed(_ sender: UIButton) {
-    showImagePopup(image:#imageLiteral(resourceName: "res_ope_pag10_Plomo"))
+    showImagePopup(image:UIImage(named: "res_ope_pag10_Plomo", inMagazine: magazine)!)
     //showVideoPopup(videoName: "video")
   }
   @IBAction func button_zinc_Pressed(_ sender: UIButton) {
-    showImagePopup(image:#imageLiteral(resourceName: "res_ope_pag10_Zinc"))
+    showImagePopup(image:UIImage(named: "res_ope_pag10_Zinc", inMagazine: magazine)!)
     //showVideoPopup(videoName: "video")
   }
   @IBAction func button_cobre_Pressed(_ sender: UIButton) {
-    showImagePopup(image:#imageLiteral(resourceName: "res_ope_pag11_Cobre"))
+    showImagePopup(image:UIImage(named: "res_ope_pag11_Cobre", inMagazine: magazine)!)
     //showVideoPopup(videoName: "video")
   }
   

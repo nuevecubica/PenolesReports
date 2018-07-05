@@ -12,7 +12,11 @@ class ImagePopupViewController: UIViewController {
   @IBOutlet weak var imageView: UIImageView!
   
   var image: UIImage? = nil
-  
+
+  override var prefersStatusBarHidden: Bool {
+    return true
+  }
+
   required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
     
