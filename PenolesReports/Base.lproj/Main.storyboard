@@ -382,7 +382,7 @@
                                                 </view>
                                             </subviews>
                                         </view>
-                                        <color key="backgroundColor" white="0.0" alpha="0.10067958047945201" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.4004173801369863" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstItem="Rtw-Db-unJ" firstAttribute="centerX" secondItem="b7d-51-Lpp" secondAttribute="centerX" id="1km-eJ-cZg"/>
                                             <constraint firstItem="rRT-5g-mIs" firstAttribute="leading" secondItem="b7d-51-Lpp" secondAttribute="leadingMargin" constant="10" id="6N3-Ar-2zC"/>
