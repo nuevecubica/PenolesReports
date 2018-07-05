@@ -19,7 +19,6 @@ class DSEngMapPage: Page {
 class DSEngMapViewController: UIViewController {
   var magazine: Magazine!
   
-  
   @IBOutlet weak var emptyMapImageView: UIImageView!
   @IBOutlet weak var backgroundImage: UIImageView!
   @IBOutlet weak var btn_exploration: UIButton!
@@ -196,7 +195,7 @@ class DSEngMapViewController: UIViewController {
   // ASSING A BACKGROUND IMAGE TO THE VIEW
   func changeImage(_ name: String) {
     backgroundImage.alpha = 0
-    backgroundImage.image = UIImage(named: name)
+    backgroundImage.image = UIImage(named: name, inMagazine: magazine)
     UIView.animate(withDuration: 0.5) {
       self.backgroundImage.alpha = 1
     }
@@ -205,7 +204,7 @@ class DSEngMapViewController: UIViewController {
   
   // ASSING A BACKGROUND IMAGE TO THE scroller
   func changeImageScroller(_ name: String) {
-    scrollerImage.image = UIImage(named: name)
+    scrollerImage.image = UIImage(named: name, inMagazine: magazine)
     //print(scrollerImage.frame.size.height)
   }
 }
