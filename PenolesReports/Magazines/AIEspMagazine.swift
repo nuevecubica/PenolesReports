@@ -13,7 +13,7 @@ class AIEspMagazine: Magazine {
   
   fileprivate init() {}
   
-  var name: String = "Peñoles AI Español"
+  var name: String = "Peñoles IA Español"
   var identifier: String = "AIEspMagazine"
   var downloadURL: URL = URL(string: "https://s3-us-west-1.amazonaws.com/nuevecubica-e3/penoles-ai-esp.zip")!
   var image: UIImage { return UIImage(named: "coverAIEspOff")! }

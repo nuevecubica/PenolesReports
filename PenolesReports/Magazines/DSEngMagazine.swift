@@ -13,7 +13,7 @@ class DSEngMagazine: Magazine {
   
   fileprivate init() {}
   
-  var name: String = "Peñoles DS English"
+  var name: String = "Peñoles SD English"
   var identifier: String = "DSEngMagazine"
   var downloadURL: URL = URL(string: "https://s3-us-west-1.amazonaws.com/nuevecubica-e3/penoles-ds-eng.zip")!
   var image: UIImage { return UIImage(named: "coverDSEngOff")! }
