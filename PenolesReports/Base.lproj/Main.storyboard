@@ -366,7 +366,7 @@
                                                     <subviews>
                                                         <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nJD-Hm-Jwc">
                                                             <rect key="frame" x="0.0" y="0.0" width="100" height="10"/>
-                                                            <color key="backgroundColor" red="0.69520282886828422" green="0.80635310913705582" blue="0.1328798050021695" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="100" id="LZg-7q-Qeg"/>
                                                             </constraints>
