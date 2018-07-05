@@ -297,7 +297,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LL7-6V-gqA">
-                                <rect key="frame" x="20" y="220" width="984" height="538"/>
+                                <rect key="frame" x="20" y="270" width="984" height="488"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dZK-o7-7GY">
                                     <size key="itemSize" width="250" height="250"/>
@@ -317,12 +317,11 @@
                                                     <rect key="frame" x="20" y="20" width="210" height="206"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peñoles DS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rRT-5g-mIs">
-                                                    <rect key="frame" x="18" y="168" width="214" height="21.5"/>
+                                                    <rect key="frame" x="18" y="158" width="214" height="20.5"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.24440817636986301" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
-                                                    <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <size key="shadowOffset" width="3" height="-1"/>
                                                 </label>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Rtw-Db-unJ">
@@ -390,7 +389,7 @@
                                             <constraint firstAttribute="trailingMargin" secondItem="rRT-5g-mIs" secondAttribute="trailing" constant="10" id="8R7-UO-9wE"/>
                                             <constraint firstAttribute="trailing" secondItem="0oN-8L-Loo" secondAttribute="trailing" constant="20" id="EQG-IP-dGy"/>
                                             <constraint firstAttribute="bottom" secondItem="e17-n0-Qwy" secondAttribute="bottom" id="GEF-dd-Mmi"/>
-                                            <constraint firstItem="rRT-5g-mIs" firstAttribute="top" secondItem="b7d-51-Lpp" secondAttribute="topMargin" constant="160" id="L2s-5x-Akd"/>
+                                            <constraint firstItem="rRT-5g-mIs" firstAttribute="top" secondItem="b7d-51-Lpp" secondAttribute="topMargin" constant="150" id="L2s-5x-Akd"/>
                                             <constraint firstItem="e17-n0-Qwy" firstAttribute="top" secondItem="0oN-8L-Loo" secondAttribute="bottom" constant="20" id="LgM-Cj-Qcz"/>
                                             <constraint firstItem="e17-n0-Qwy" firstAttribute="top" secondItem="Rtw-Db-unJ" secondAttribute="bottom" constant="10" id="OEj-4k-YAg"/>
                                             <constraint firstItem="e17-n0-Qwy" firstAttribute="leading" secondItem="b7d-51-Lpp" secondAttribute="leading" id="XTw-cc-vYQ"/>
@@ -423,11 +422,11 @@
                         <constraints>
                             <constraint firstItem="LL7-6V-gqA" firstAttribute="leading" secondItem="xfd-64-9nX" secondAttribute="leading" constant="20" id="8IY-2P-jdy"/>
                             <constraint firstItem="zwD-Lo-ue8" firstAttribute="top" secondItem="5wt-5Q-Eve" secondAttribute="top" id="Csg-bc-051"/>
-                            <constraint firstItem="LL7-6V-gqA" firstAttribute="top" secondItem="xfd-64-9nX" secondAttribute="top" constant="200" id="LdY-Bu-Tbj"/>
+                            <constraint firstItem="LL7-6V-gqA" firstAttribute="top" secondItem="xfd-64-9nX" secondAttribute="top" constant="250" id="EU9-KI-8wi"/>
                             <constraint firstItem="zwD-Lo-ue8" firstAttribute="leading" secondItem="xfd-64-9nX" secondAttribute="leading" id="QGw-uQ-nle"/>
                             <constraint firstItem="xfd-64-9nX" firstAttribute="bottom" secondItem="zwD-Lo-ue8" secondAttribute="bottom" id="Wds-nX-4kn"/>
                             <constraint firstItem="xfd-64-9nX" firstAttribute="trailing" secondItem="zwD-Lo-ue8" secondAttribute="trailing" id="fus-N0-YUO"/>
-                            <constraint firstItem="xfd-64-9nX" firstAttribute="bottom" secondItem="LL7-6V-gqA" secondAttribute="bottom" constant="10" id="heX-Tf-JUf"/>
+                            <constraint firstItem="xfd-64-9nX" firstAttribute="bottom" secondItem="LL7-6V-gqA" secondAttribute="bottom" constant="10" id="j4l-Gi-eQl"/>
                             <constraint firstItem="xfd-64-9nX" firstAttribute="trailing" secondItem="LL7-6V-gqA" secondAttribute="trailing" constant="20" id="yUP-a8-KTP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xfd-64-9nX"/>
