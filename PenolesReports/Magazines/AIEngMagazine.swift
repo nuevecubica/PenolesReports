@@ -16,6 +16,8 @@ class AIEngMagazine: Magazine {
   var name: String = "Peñoles AI English"
   var identifier: String = "AIEngMagazine"
   var downloadURL: URL = URL(string: "https://s3-us-west-1.amazonaws.com/nuevecubica-e3/penoles-ai-eng.zip")!
+  var image: UIImage { return UIImage(named: "coverAIEngOff")! }
+  var downloadedImage: UIImage { return UIImage(named: "coverAIEngOn")! }
   
   var initialViewController: UIViewController {
     let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "pageNavigationController") as! PageNavigationViewController

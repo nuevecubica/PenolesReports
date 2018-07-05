@@ -10,6 +10,8 @@ import UIKit
 
 protocol Magazine {
   var name: String { get }
+  var image: UIImage { get }
+  var downloadedImage: UIImage { get }
   var identifier: String { get }
   var downloadURL: URL { get }
   var directory: URL { get }

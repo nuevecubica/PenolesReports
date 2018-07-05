@@ -87,6 +87,7 @@ extension MagazinePickerViewController: DownloadManagerDelegate {
 
 class MagazineCell: UICollectionViewCell {
   @IBOutlet weak var titleLabel: UILabel!
+  @IBOutlet weak var coverImageView: UIImageView!
   @IBOutlet weak var downloadCancelButton: UIButton!
   @IBOutlet weak var deleteButton: UIButton!
   @IBOutlet weak var progressContainer: UIView!
@@ -103,13 +104,14 @@ class MagazineCell: UICollectionViewCell {
     
     titleLabel.text = magazine.name
     
-    
     if FileManager.default.fileExists(atPath: magazine.directory.path, isDirectory: nil) {
       downloadCancelButton.isHidden = true
       deleteButton.isHidden = false
+      coverImageView.image = magazine.downloadedImage
     } else {
       downloadCancelButton.isHidden = false
       deleteButton.isHidden = true
+      coverImageView.image = magazine.image
     }
     
     let progress = DownloadManager.shared.progress[magazine.identifier]

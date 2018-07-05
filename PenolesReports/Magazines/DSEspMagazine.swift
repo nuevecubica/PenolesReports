@@ -16,6 +16,8 @@ class DSEspMagazine: Magazine {
   var name: String = "Peñoles DS Español"
   var identifier: String = "DSEspMagazine"
   var downloadURL: URL = URL(string: "https://s3-us-west-1.amazonaws.com/nuevecubica-e3/penoles-ds-esp.zip")!
+  var image: UIImage { return UIImage(named: "coverDSEspOff")! }
+  var downloadedImage: UIImage { return UIImage(named: "coverDSEspOn")! }
   
   var initialViewController: UIViewController {
     let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "pageNavigationController") as! PageNavigationViewController
