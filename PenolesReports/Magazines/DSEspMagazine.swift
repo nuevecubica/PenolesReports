@@ -97,7 +97,7 @@ class DSEspMagazine: Magazine {
       des_amb_4Page(imageName: "des_ambiental_pag4"),
       des_amb_5Page(imageName: "des_ambiental_pag5"),
       des_amb_6Page(imageName: "des_ambiental_pag6"),
-      ImagePage(imageName: "des_ambiental_pag7"),
+      des_amb_7Page(imageName: "des_ambiental_pag7"),
       des_amb_8Page(imageName: "des_ambiental_pag8"),
       des_amb_9Page(imageName: "des_ambiental_pag9"),
       ImagePage(imageName: "des_ambiental_pag10"),
@@ -116,7 +116,7 @@ class DSEspMagazine: Magazine {
       des_soc_10Page(imageName:"des_social_pag10"),
       ImagePage(imageName: "des_social_pag11"),
       ImagePage(imageName: "des_social_pag12"),
-      ImagePage(imageName: "des_social_pag13"),
+      des_soc_13Page(imageName:"des_social_pag13"),
       des_soc_14Page(imageName:"des_social_pag14"),
       ImagePage(imageName: "des_social_pag15"),
       ImagePage(imageName: "des_social_pag16"),
@@ -133,7 +133,8 @@ class DSEspMagazine: Magazine {
       ImagePage(imageName: "des_social_pag27"),
       ImagePage(imageName: "des_social_pag28"),
       ImagePage(imageName: "des_social_pag29"),
-      ImagePage(imageName: "des_social_pag30"),
+      des_soc_30Page(imageName: "des_social_pag30"),
+      //ImagePage(imageName: "des_social_pag30"),
       ]),
     
     Section(name: "Premios y distinciones", pages: [

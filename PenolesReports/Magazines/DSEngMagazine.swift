@@ -55,6 +55,7 @@ class DSEngMagazine: Magazine {
       ImagePage(imageName: "gestion_pag5"),
       ImagePage(imageName: "gestion_pag6"),
       gestion_7Page(imageName:"gestion_pag7"),
+      //ImagePage(imageName: "gestion_pag7")
       ]),
     
     Section(name: "Stakeholders", pages: [

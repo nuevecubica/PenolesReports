@@ -57,7 +57,7 @@ class res_operacion_19ViewController: PageWithButtonsViewController {
     // Image coords divided by 3
     NSLayoutConstraint.activate([
       button_plata.leadingAnchor.constraint(equalTo: imageView.leadingAnchor, constant: 560.0 * imageScale),
-      button_plata.topAnchor.constraint(equalTo: imageView.topAnchor, constant:  390.0 * imageScale)
+      button_plata.topAnchor.constraint(equalTo: imageView.topAnchor, constant:  395.0 * imageScale)
       ])
     //*************************************
     //**************************************

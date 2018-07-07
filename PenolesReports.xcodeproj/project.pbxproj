@@ -243,8 +243,8 @@
 				CBABFAC420E89CEB001BC5AD /* des_soc_2.swift */,
 				CBABFAC320E89CEB001BC5AD /* des_soc_8.swift */,
 				CBABFAB920E89CEA001BC5AD /* des_soc_10.swift */,
-				CBABFAB820E89CEA001BC5AD /* des_soc_14.swift */,
 				CB590C3C20E9778100F9E2C6 /* des_soc_13.swift */,
+				CBABFAB820E89CEA001BC5AD /* des_soc_14.swift */,
 				CB590C3D20E9778200F9E2C6 /* des_soc_30.swift */,
 				CBABFAC520E89CEC001BC5AD /* gestion_7.swift */,
 			);

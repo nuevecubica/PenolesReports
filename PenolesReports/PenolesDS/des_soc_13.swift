@@ -52,7 +52,7 @@ class des_soc_13ViewController: PageWithButtonsViewController {
   //*****************************************
   
   @IBAction func button_np_Pressed(_ sender: UIButton) {
-    showImagePopup(image:UIImage(named: "pag13_NiveldePlomoenSangre", inMagazine: magazine)!)
+    showImagePopup(image:UIImage(named: "NivelPlomoEnSangre", inMagazine: magazine)!)
   }
   
 }

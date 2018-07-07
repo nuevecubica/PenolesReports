@@ -54,7 +54,7 @@ class des_soc_30ViewController: PageWithButtonsViewController {
   //*****************************************
   
   @IBAction func button_vvq_Pressed(_ sender: UIButton) {
-    showImagePopup(image:UIImage(named: "pag_30_NiveldeplomoensangreenPoblacion", inMagazine: magazine)!)
+    showImagePopup(image:UIImage(named: "NivelPlomoEnSangrePoblacion", inMagazine: magazine)!)
   }
   
 }

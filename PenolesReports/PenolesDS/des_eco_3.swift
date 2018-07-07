@@ -137,6 +137,7 @@ class des_eco_3ViewController: PageWithButtonsViewController {
     showImagePopup(image:UIImage(named: "derrama_economica", inMagazine: magazine)!)
   }
   @IBAction func btn_vid_Pressed(_ sender: UIButton) {
+    
     showVideoPopup(vimeoId: "278336617")
   }
 }

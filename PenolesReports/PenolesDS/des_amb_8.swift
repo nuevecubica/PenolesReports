@@ -41,7 +41,7 @@ class des_amb_8ViewController: PageWithButtonsViewController {
     // Image coords divided by 3
     NSLayoutConstraint.activate([
       button_cpm.leadingAnchor.constraint(equalTo: imageView.leadingAnchor, constant: 40.0 * imageScale),
-      button_cpm.topAnchor.constraint(equalTo: imageView.topAnchor, constant:  540.0 * imageScale)
+      button_cpm.topAnchor.constraint(equalTo: imageView.topAnchor, constant:  510.0 * imageScale)
       ])
     //**************************************
     //**************************************
