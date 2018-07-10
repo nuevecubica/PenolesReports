@@ -6,6 +6,7 @@
 //  Copyright © 2018 Pablo Gomez Basanta. All rights reserved.
 //
 
+
 import UIKit
 
 protocol Magazine {
